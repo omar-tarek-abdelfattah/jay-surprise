@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@theme {
+  /* Typography */
+  --font-headline: var(--font-playfair), Georgia, serif;
+  --font-body: var(--font-plus-jakarta), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-label: var(--font-plus-jakarta), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-playfair: var(--font-playfair), Georgia, serif;
+  --font-jakarta: var(--font-plus-jakarta), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  /* Primary Palette: #E8A598 (Dusty Terracotta / Rose) */
+  --color-primary: #E8A598;
+  --color-primary-50: #FCF7F6;
+  --color-primary-100: #F9EBE7;
+  --color-primary-200: #F4D5CE;
+  --color-primary-300: #EEBEB3;
+  --color-primary-400: #E8A598;
+  --color-primary-500: #D47E6E;
+  --color-primary-600: #B85949;
+  --color-primary-700: #933E30;
+  --color-primary-800: #6D2C22;
+  --color-primary-900: #613B35;
+  --color-primary-950: #3E1610;
+
+  /* Secondary Palette: #7EA0B7 (Dusty Slate / Steel Blue) */
+  --color-secondary: #7EA0B7;
+  --color-secondary-50: #F3F7FA;
+  --color-secondary-100: #E5EFF4;
+  --color-secondary-200: #C9DFEB;
+  --color-secondary-300: #A6C9DE;
+  --color-secondary-400: #7EA0B7;
+  --color-secondary-500: #5D839D;
+  --color-secondary-600: #46677F;
+  --color-secondary-700: #375164;
+  --color-secondary-800: #2C3E4C;
+  --color-secondary-900: #1B2933;
+  --color-secondary-950: #101920;
+
+  /* Tertiary Palette: #D8E2DC (Soft Sage / Light Mist) */
+  --color-tertiary: #D8E2DC;
+  --color-tertiary-50: #F7FAF8;
+  --color-tertiary-100: #EEF4F1;
+  --color-tertiary-200: #D8E2DC;
+  --color-tertiary-300: #BDCFC5;
+  --color-tertiary-400: #9EB6A9;
+  --color-tertiary-500: #7C988B;
+  --color-tertiary-600: #60796E;
+  --color-tertiary-700: #4A5D54;
+  --color-tertiary-800: #3A4741;
+  --color-tertiary-900: #2C3531;
+  --color-tertiary-950: #161C19;
+
+  /* Neutral Palette: #C5BAAF (Warm Greige / Taupe Sand) */
+  --color-neutral-main: #C5BAAF;
+  --color-neutral-50: #FAF8F6;
+  --color-neutral-100: #F4EFEA;
+  --color-neutral-200: #E8E0D7;
+  --color-neutral-300: #D8CEC3;
+  --color-neutral-400: #C5BAAF;
+  --color-neutral-500: #A89B8F;
+  --color-neutral-600: #887B6F;
+  --color-neutral-700: #685C52;
+  --color-neutral-800: #4D433B;
+  --color-neutral-900: #322A24;
+  --color-neutral-950: #1E1814;
+
+  /* UI Canvas & Surfaces */
+  --color-canvas: #EFE8E1;
+  --color-surface: #F6EFE9;
+  --color-surface-alt: #EBE2D8;
+  --color-surface-pill: #ECE3DB;
+  --color-surface-dark: #272320;
+  --color-surface-border: #E3D7CC;
+}
+
+:root {
+  --background: #EFE8E1;
+  --foreground: #2D2421;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
