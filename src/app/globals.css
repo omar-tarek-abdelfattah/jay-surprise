@@ -74,8 +74,8 @@
 }
 
 :root {
-  --background: #EFE8E1;
-  --foreground: #2D2421;
+  --background: #F7F3EE;
+  --foreground: #2A2320;
 }
 
 body {
@@ -83,4 +83,131 @@ body {
   color: var(--foreground);
   font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  overflow-x: hidden;
+}
+
+/* Perspective & 3D Envelope */
+.perspective-1000 {
+  perspective: 1200px;
+}
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+/* iOS Glass Effect */
+.ios-glass {
+  background: rgba(255, 255, 255, 0.68);
+  backdrop-filter: blur(28px) saturate(200%);
+  -webkit-backdrop-filter: blur(28px) saturate(200%);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  box-shadow: 0 12px 36px -4px rgba(45, 36, 33, 0.08), 0 4px 12px rgba(45, 36, 33, 0.03);
+}
+
+.ios-glass-dark {
+  background: rgba(30, 24, 22, 0.72);
+  backdrop-filter: blur(28px) saturate(180%);
+  -webkit-backdrop-filter: blur(28px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 16px 40px -4px rgba(0, 0, 0, 0.35);
+}
+
+.ios-island {
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(32px) saturate(210%);
+  -webkit-backdrop-filter: blur(32px) saturate(210%);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  box-shadow: 0 20px 48px -8px rgba(50, 42, 38, 0.14), 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+/* Cinematic Keyframes */
+@keyframes kenburns-pan {
+  0% {
+    transform: scale(1.08) translateX(-3%) translateY(0%);
+  }
+  50% {
+    transform: scale(1.15) translateX(2%) translateY(-1%);
+  }
+  100% {
+    transform: scale(1.18) translateX(4%) translateY(1%);
+  }
+}
+
+@keyframes kenburns-walk {
+  0% {
+    transform: scale(1.02) translateY(2%);
+  }
+  50% {
+    transform: scale(1.12) translateY(-1%);
+  }
+  100% {
+    transform: scale(1.16) translateY(-2%);
+  }
+}
+
+@keyframes float-gentle {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes pulse-subtle {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.04);
+    opacity: 1;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-kenburns-pan {
+  animation: kenburns-pan 12s ease-in-out infinite alternate;
+}
+
+.animate-kenburns-walk {
+  animation: kenburns-walk 10s ease-in-out infinite alternate;
+}
+
+.animate-float {
+  animation: float-gentle 4s ease-in-out infinite;
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 2.5s ease-in-out infinite;
+}
+
+/* Safe Area Insets for iPhone */
+.pb-safe {
+  padding-bottom: max(1.5rem, env(safe-area-inset-bottom));
+}
+
+.pt-safe {
+  padding-top: max(1rem, env(safe-area-inset-top));
+}
+
+/* Custom scrollbar hiding for clean iOS look */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

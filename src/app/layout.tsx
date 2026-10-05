@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Playfair_Display, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 
@@ -14,9 +14,16 @@ const plusJakartaSans = Plus_Jakarta_Sans({
   display: "swap",
 });
 
+export const viewport: Viewport = {
+  themeColor: "#0F0D0C",
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+};
+
 export const metadata: Metadata = {
-  title: "Design System Showcase | Next.js & Tailwind CSS",
-  description: "Palette and typography design system with Playfair Display and Plus Jakarta Sans",
+  title: "For Jay 🤍 | A Special Surprise",
+  description: "A cinematic keepsake of our memories, songs, and a letter from the heart.",
 };
 
 export default function RootLayout({
@@ -29,7 +36,7 @@ export default function RootLayout({
       lang="en"
       className={`${playfairDisplay.variable} ${plusJakartaSans.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col font-body bg-[#EFE8E1] text-[#2D2421]">
+      <body className="min-h-full flex flex-col font-body bg-[#F7F3EE] text-[#2A2320]">
         {children}
       </body>
     </html>
