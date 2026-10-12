@@ -235,15 +235,15 @@ export default function LetterEnvelope({ onEnvelopeOpened, isPlayingMusic }: Let
               </div>
 
               <p className="font-headline italic text-lg sm:text-xl text-[#613B35] leading-relaxed text-center px-2">
-                I have no idea why this feels like a farewell, but I know it's not. I really wanted to give you something nice to remember me when I go for geish
+                I have no idea why this feels like a farewell, but I know it's not. I really wanted to give you something nice to remember me when I go for sa3qa
               </p>
 
               <p>
-                I dont know how to start, it's not a farewell, I'm not disappering for good. I will be back inshallah but I wanted to tell you a bunch of stuff before I go to markaz tadreeb/geish so I don't feel like I left without saying what I want. I also hope that you don't view this as too much or like there'll be anything new, I just wanted to make you happy with this surprise (yala ya sety aho consider it shwayet hanan ;))
+                I dont know how to start, it's not a farewell, I'm not disappering for good. I will be back inshallah (in 2.5 months) but I wanted to tell you a bunch of stuff before I go to markaz tadreeb/geish so I don't feel like I left without saying what I want. I also hope that you don't view this as too much or like there'll be anything new, I just wanted to make you happy with this surprise (yala ya sety aho consider it shwayet hanan ;))
               </p>
 
               <p>
-                I wanna start with apologizing that I made our whole dynamic awkward or if I repelled you by liking you, but you made so much sense to me and I was just happy as long as you were there. I guess you just don't want that and I did understand it a while ago even if it took me so much power and endurance to do so. it HURT me bad and it propably still does.
+                I wanna start with apologizing that I made our whole dynamic awkward or if I repelled you, but you made so much sense to me and I was just happy as long as you were there. I guess you just didn't want that and I did understand it a while ago even if it took me so much power and endurance to do so. it HURT me bad and it propably still does but I understand nd I only want you to be happy.
               </p>
 
               <p>
@@ -255,7 +255,7 @@ export default function LetterEnvelope({ onEnvelopeOpened, isPlayingMusic }: Let
                 I also want you to remember me, not for ruining something good because of my feelings, but that I was willing to be there and do anything no matter how far I was, and that I tried to be always there for you. And remember my promise that I will remain there for you as long as I live, no matter what the future holds for us. I am NOT like those who gave up on you and I NEVER will be
               </p>
 
-              <p>This is just a temporary goodbye, I will be back, Wish me luck. I will have a small zarayer phone and I will call you nd mama from. But please allow me to take the first week in with my own thoughts and on my own, I will call you when I think the time is right.</p>
+              <p>This is just a temporary goodbye, I will be back, Wish me luck. I won't have a zarayer phone, but hatsaraf w i'll have you and your mama's number and i will call you inshallah..  But please allow me to take the first week in with my own thoughts and on my own, I will call you when I think the time is right. That definetly doesn't mean you won't be on my mind most of the time, even the times i be getting an ass whooping in. i will miss you so much. ly</p>
 
 
               <div className="bg-[#F2ECE3] rounded-2xl p-4 border border-[#E3DACF] my-4">
@@ -266,7 +266,7 @@ export default function LetterEnvelope({ onEnvelopeOpened, isPlayingMusic }: Let
 
               <div className="pt-4 border-t border-[#EADCCE] flex flex-col items-end">
                 <span className="text-xs uppercase tracking-widest text-[#8A796F]">Yours</span>
-                <span className="font-headline italic text-2xl text-[#83382B] mt-1">O🤍</span>
+                <span className="font-headline italic text-2xl text-[#83382B] mt-1">O.</span>
               </div>
             </div>
 
